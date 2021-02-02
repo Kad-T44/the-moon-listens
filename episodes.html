@@ -1,0 +1,109 @@
+<!doctype html!>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>the-moon-rises-episode-list</title>
+
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>the-moon-listens</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    
+
+<!-- Changed NavBar to carousel nav from bootstrap example, but now the menu won't open, so need to figure
+out where that issue source is. -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template (from boostrap example site)-->
+    <link href="carousel.css" rel="stylesheet">
+
+
+
+<title>the-moon-listens</title>
+
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">The Moon Listens</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="episodes.html">Episodes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contact Me</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Creating the playlist for the episodes. For now, this will just hold placeholder songs. -->
+      <div class="center">
+        <audio src = "" controls id = "audio">
+            Sry, your browser doesn't support html5
+        </audio>
+        <ul id = "Playlist">
+            <li class="current-song"><a href="Siddhartha Corsus - Mythos.mp3">Mythos</a></li>
+            <li><a href="Filmy Ghost (Sábila Orbe) - Misa Kuroi The Dark Angel ov Magick & Witchcraft.mp3">Misa Kuroi the Dark Angel of Magick & Witchcraft</a></li>
+            <li><a href="Meavy Boy - Everyone is Happy Here.mp3">Everyone is Happy Here</a></li>
+            <li><a href="Filmy Ghost (Sábila Orbe) - Hallucinogen Overdose.mp3">Hallucinogen Overdose</a></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-2.2.0.js">
+        </script>
+        <script>
+            audioPlayer();
+            function audioPlayer(){
+                var currentSong = 0;
+                $(audioPlayer)[0].src = $("#playlist li a")[0];
+                $("#playlist li a").click(funtion(e){
+                    e.preventDefault();
+                    $("audioPlayer")[0].src = this;
+                    $("#playist li").removeClass("current-song");
+                    currentSong = $(this).parent().index();
+                    $(this).parent().addClass("current-song")
+
+                })
+
+            }
+        </script>
+        </div>
+
+</body>
+</html>

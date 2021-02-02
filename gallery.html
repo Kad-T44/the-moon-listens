@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>the-moon-listens</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    
+
+<!-- Changed NavBar to carousel nav from bootstrap example, but now the menu won't open, so need to figure
+out where that issue source is. -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template (from boostrap example site)-->
+    <link href="carousel.css" rel="stylesheet">
+
+
+    <!-- I got these scripts from the w3schools carousel example, and they might be the solution to my 
+        issue with the carousel not moving. there are the 4 icons on the bottom of the carousel that light
+        up depending on the page your on. when I add these, the light actually changes when you click the
+        left and right buttons. it doesn't change the slide, and it doesn't change back, but it is a good
+        starting point for finding the solution.-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">The Moon Listens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="episodes.html">Episodes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contact Me</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+        <div class="center">
+            <button><a href="#">Visual Gallery</a></button>
+            <button><a href="#">Audio Gallery</a></button>
+        </div>
+    </body>
